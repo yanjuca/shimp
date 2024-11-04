@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+
+    <link rel="stylesheet" href="stylesproduto.css">
+
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Contato</a></li>
+        <li><a href="index.html">Sobre nós</a></li>
+    </ul>
+    
+</head>
+
+<body>
+
+    <main class="container">
+    
+        <!-- Coluna esquerda / Foto do tenis -->
+    
+        <div class="coluna-esquerda">
+            <img data-image="branco" src="assets/nike/branco.avif" alt="">
+            <img data-image="preto" src="assets/nike/preto.avif" alt="">
+            <img data-image="vermelho" src="assets/nike/vermelho.avif" alt="">
+        </div>
+
+        <!-- Coluna direita -->
+
+        <div class="coluna-direita">
+
+            <!-- Descrição do produto -->
+
+             <div class="descricao-produto">
+                <span>Tênis</span>
+                <h1>Nike Metcon 9</h1>
+                <p>Seja qual for o seu "porque" para malhar, o Metcon 9 faz tudo valer a pena. Melhoramos o 8   com uma placa Hyperlift maior e adicionamos um envoltório de corda de borracha.</p>
+             </div>
+
+             <!-- Configuração do produto -->
+             <div class="configuracao-produto">
+
+                <!-- Cor do produto -->
+                 <div class="cor-produto">
+                    <span>Cor</span>
+
+                    <div class="escolha-cor">
+                        <div>
+                            <input data-image="vermelho" type="radio" id="vermelho" name="cor" value="vermelho" checked>
+                            <label for="vermelho"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="preto" type="radio" id="preto" name="cor" value="preto" checked>
+                            <label for="preto"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="branco" type="radio" id="branco" name="cor" value="branco" checked>
+                            <label for="branco"><span></span></label>
+                        </div>
+                    </div>
+
+                 </div>
+
+                 <!-- Configuração tamanho -->
+                 <div class="configuracao-tamanho">
+                    <span>Tamanho</span>
+
+                    <div class="escolha-tamanho">
+                        <button>39</button>
+                        <button>40</button>
+                        <button>41</button>
+                    </div>
+
+                    <a href="#">Como escolher seu tamanho</a>
+                 </div>
+             </div>
+
+             <!-- Precificação Produto -->
+            <div class="preco-produto">
+                <span>R$850</span>
+                <a href="#" class="comprar-btn">Comprar agora</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
