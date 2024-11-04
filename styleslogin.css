@@ -4,36 +4,33 @@ html{
 
 /* Navbar */
 
-/* ul{
-    list-style-type: none;
-    margin: 0;
+* {
     padding: 0;
-    overflow: hidden;
-    background-color: #374338;
-    border-radius: 12px 12px;
-    position: relative;
-    top: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
-li{
-    float: left;
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #cfd8dc;
+    margin-bottom: 10px;
 }
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    margin-top: 5px;
+}
+nav a{
     text-decoration: none;
+    color: black;
 }
-li a:hover{
-    background-color: #111;
-}
- */
+
 /* Body */
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     line-height: 1.5;
     min-height: 1.5;
     background: #f3f3f3;
@@ -44,6 +41,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 main {
+    display: flex;
+    align-content: center;
     background-color: #FFF;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -52,21 +51,21 @@ main {
     width: 500px;
     text-align: center;
 }
-h1 {
-    color: #4caf50;
-}
 label {
     display: block;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 5px;
-    text-align: left;
+    text-align: center;
     color: #555;
     font-weight: bold;
 }
 input {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    clear: center;
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
     margin-bottom: 5px;
     padding: 10px;
     box-sizing: border-box;
@@ -82,7 +81,7 @@ button {
     color: white;
     cursor: pointer;
     background-color: #4caf50;
-    width: 100%;
+    width: 30%;
     font-size: 16px;
 }
 .wrap {
