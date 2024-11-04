@@ -1,11 +1,17 @@
-ul{
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+
+/* ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #374338;
     border-radius: 12px 12px;
-    position: sticky;
+    position: relative;
     top: 0;
 }
 li{
@@ -21,6 +27,8 @@ li a{
 li a:hover{
     background-color: #111;
 }
+ */
+/* Body */
 
 .container{
     max-width: 100%;
