@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
     <link rel="stylesheet" href="styles/login.css">
+
+    <!-- Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
     
 </head>
 
@@ -36,12 +45,12 @@
     <div class="main">
         
          <form action="">
-            <label for="first">
+            <label for="first" class="inputname">
             Username:
             </label>
-            <input type="text" id="first" name="first" placeholder="Digite seu usuário" required>
+            <input  type="text" id="first" name="first" placeholder="Digite seu usuário" required>
 
-            <label for="password">
+            <label for="password" class="inputname">
             Senha:
             </label>
             <input type="password" id="password" name="password"    placeholder="Digite sua senha" required>
@@ -53,7 +62,7 @@
             </div>
          </form>
 
-         <p style="text-align: center;">Não tem cadastro? 
+         <p class="inputname" style="text-align: center;">Não tem cadastro? 
             <a href="#" style="text-decoration: none;">
                 Crie uma conta
             </a>

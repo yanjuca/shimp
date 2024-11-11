@@ -26,9 +26,9 @@ input {
     display: inline-block;
     clear: center;
     text-align: center;
-    width: 30%;
-    margin-left: 35%;
-    margin-bottom: 5px;
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: auto;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #ddd;
@@ -43,11 +43,15 @@ button {
     color: white;
     cursor: pointer;
     background-color: #4caf50;
-    width: 30%;
+    width: 10%;
     font-size: 16px;
 }
 .wrap {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.inputname {
+    font: var(--text);
+    font-weight: bold;
 }
