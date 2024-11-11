@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Tênis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px;
+        }
+        .produto {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .produto:hover {
+            transform: scale(1.05);
+        }
+        .produto img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .produto h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .produto p {
+            font-size: 16px;
+            color: #555;
+        }
+        .produto .preco {
+            color: #e63946;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Catálogo de Tênis</h1>
+</header>
+
+<main class="catalogo">
+    <div class="produto">
+        <img src="assets/nike/preto.avif" alt="Tênis Esportivo 1">
+        <h2>Tênis Esportivo 1</h2>
+        <p>Descrição breve do tênis esportivo.</p>
+        <p class="preco">R$ 199,90</p>
+    </div>
+    <div class="produto">
+        <img src="" alt="Tênis Casual 2">
+        <h2>Tênis Casual 2</h2>
+        <p>Descrição breve do tênis casual.</p>
+        <p class="preco">R$ 249,90</p>
+    </div>
+    <div class="produto">
+        <img src="imagens/tenis3.jpg" alt="Tênis de Corrida 3">
+        <h2>Tênis de Corrida 3</h2>
+        <p>Descrição breve do tênis de corrida.</p>
+        <p class="preco">R$ 299,90</p>
+    </div>
+    
+</main>
+
+</body>
+</html>

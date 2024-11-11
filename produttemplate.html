@@ -1,93 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto</title>
 
-    <link rel="stylesheet" href="stylesproduto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/product.css">
 
     <!-- Navbar -->
-
-    <nav>
-        <h2><a href="index.html">Shimp</a></h2>
-        <ul>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
-
     
 </head>
 
 <body>
 
-    <main class="container">
-    
-        <!-- Coluna esquerda / Foto do tenis -->
-    
-        <div class="coluna-esquerda">
-            <img data-image="branco" src="assets/nike/branco.avif" alt="">
-            <img data-image="preto" src="assets/nike/preto.avif" alt="">
-            <img data-image="vermelho" src="assets/nike/vermelho.avif" alt="">
-        </div>
+    <div class="surface-color">
+        <nav class="container">
+            <a href="index.html" id="logo">
+                <img src="assets/logos/logo-white-nobg.png" alt="logomarca">
+            </a>
 
-        <!-- Coluna direita -->
+            <ul id="primary-menu">
+                <li>
+                    <a href="catalogo.html">Lupa</a>
+                </li>
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">Cadastro</a></li>
+            </ul>
+        </nav>
+    </div>
 
-        <div class="coluna-direita">
 
-            <!-- Descrição do produto -->
-
-             <div class="descricao-produto">
-                <span>Tênis</span>
-                <h1>Nike Metcon 9</h1>
-                <p>Seja qual for o seu "porque" para malhar, o Metcon 9 faz tudo valer a pena. Melhoramos o 8   com uma placa Hyperlift maior e adicionamos um envoltório de corda de borracha.</p>
-             </div>
-
-             <!-- Configuração do produto -->
-             <div class="configuracao-produto">
-
-                <!-- Cor do produto -->
-                 <div class="cor-produto">
-                    <span>Cor</span>
-
-                    <div class="escolha-cor">
-                        <div>
-                            <input data-image="vermelho" type="radio" id="vermelho" name="cor" value="vermelho" checked>
-                            <label for="vermelho"><span></span></label>
-                        </div>
-                        <div>
-                            <input data-image="preto" type="radio" id="preto" name="cor" value="preto" checked>
-                            <label for="preto"><span></span></label>
-                        </div>
-                        <div>
-                            <input data-image="branco" type="radio" id="branco" name="cor" value="branco" checked>
-                            <label for="branco"><span></span></label>
-                        </div>
-                    </div>
-
-                 </div>
-
-                 <!-- Configuração tamanho -->
-                 <div class="configuracao-tamanho">
-                    <span>Tamanho</span>
-
-                    <div class="escolha-tamanho">
-                        <button>39</button>
-                        <button>40</button>
-                        <button>41</button>
-                    </div>
-
-                    <a href="#">Como escolher seu tamanho</a>
-                 </div>
-             </div>
-
-             <!-- Precificação Produto -->
-            <div class="preco-produto">
-                <span>R$850</span>
-                <a href="#" class="comprar-btn">Comprar agora</a>
-            </div>
-        </div>
-    </main>
 
 </body>
 </html>
