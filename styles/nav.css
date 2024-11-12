@@ -21,6 +21,25 @@ nav ul {
 }
 
 nav a img{
-    width: 30%;
+    width: 110px;
     
 }
+
+.main-logo-wrapper {
+    padding: 8px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    text-shadow: 1px 1px 1px #31313181;
+    font-size: 1rem;
+    transition: all 500ms;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.372);
+
+    
+    &:hover {
+        transform: scale(1.050);
+    }
+    
+}
+
