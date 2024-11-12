@@ -40,7 +40,7 @@ a:hover {
 }
 
 .container {
-    padding-inline: px;
+    padding-inline: 20px;
     max-width: 1280px;
     margin-inline: auto;
 }
