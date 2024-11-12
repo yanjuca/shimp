@@ -12,7 +12,6 @@
     --shape-transparency: #ffffff90;
     --text-color-primary: #313131;
     --text-color-secondary: #6C6C6C;
-
     --font-family: "Poppins", sans-serif;
     --text-lg: bold 32px/125% var(--font-family);
     --text: 16px/150% var(--font-family);
@@ -29,10 +28,15 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    text-shadow: 1px 1px 1px #31313181;
+    font-size: 1rem;
+    transition: all 500ms;
 }
 
 a:hover {
-    color: var(--text-color-primary);
+/*     transition: all 500ms;*/
+    font-size: 2rem;
+    font-size-adjust: 20px;
 }
 
 .container {
@@ -42,6 +46,9 @@ a:hover {
 }
 
 .surface-color{
-    background-color: var(--brand-color);
+/*     background-color: var(--brand-color); */
     box-shadow: 0px 0px 20px #313131;
+    background-image: url(../assets/images/carousel/slide1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
 }

@@ -5,15 +5,17 @@ nav {
     align-items: center;
     
     line-height: 0;
-    padding-block: 15px 16px;
-}
+    padding-block: 15px 12px;
+/*     background-image: url(../assets/images/carousel/slide1.webp);
+ */}
 
 nav ul {
     color: var(--skeleton-color);
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    font-weight: bold;
 
     padding-block: 8px;
 }
