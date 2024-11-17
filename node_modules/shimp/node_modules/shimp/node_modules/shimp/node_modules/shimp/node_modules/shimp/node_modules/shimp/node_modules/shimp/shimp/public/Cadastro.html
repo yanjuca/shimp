@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  
+  <link rel="stylesheet" href="styles/cadastro.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="surface-color">
+    <nav class="container">
+      <a class="main-logo-wrapper" href="index.html" id="logo">
+        <img class="main-logo" src="assets/logos/logo-black-name.png" alt="logomarca">
+      </a>
+
+      <ul id="primary-menu">
+        <li><a href="catalogo.html">Lupa</a></li>
+        <li><a href="#">Carrinho</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Cadastro -->
+  <div class="main">
+    <h1>Cadastro</h1>
+    <!-- React irá renderizar o componente de cadastro aqui -->
+    <div id="root"></div>
+  </div>
+
+  <!-- Incluir o arquivo JS para renderizar o Cadastro -->
+  <script src="src/cadastro.js"></script>
+</body>
+</html>

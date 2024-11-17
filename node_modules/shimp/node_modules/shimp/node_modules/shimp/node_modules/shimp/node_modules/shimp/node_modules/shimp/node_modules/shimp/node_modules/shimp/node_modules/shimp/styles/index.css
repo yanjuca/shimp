@@ -1,0 +1,12 @@
+@import url(global.css);
+@import url(nav.css);
+
+.anuncio {
+    height: auto;
+    width: 100%;
+}
+
+.imgcarousel {
+    height: auto;
+    width: 100%;
+}
