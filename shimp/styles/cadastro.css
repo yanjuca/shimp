@@ -1,0 +1,98 @@
+@import url(global.css);
+@import url(nav.css);
+
+
+
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+}
+input {
+    display: inline-block;
+    clear: center;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #4caf50;
+    width: 30%;
+    font-size: 16px;
+}
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputname {
+    font: var(--text);
+    font-weight: bold;
+}
+.login-logo{
+    height: 90px;
+    width: auto;
+    justify-content: center;
+    display: flex;
+    padding-top: 40px;
+}
+.formlogin{
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    justify-content: center;
+    width: 350px;
+    height: auto;
+    box-shadow: 0px 0px 30px #00000071;
+    padding-bottom: 30px;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: auto;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    display: block;
+    background-image: url(../assets/images/carousel/slide1.webp);
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+  
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  .hover-cadastro:hover{
+    font-size: 1.2rem;
+    font-size-adjust: 20px;
+  }
