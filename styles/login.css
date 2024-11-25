@@ -12,6 +12,7 @@ main {
     transition: transform 0.2s;
     width: 500px;
     text-align: center;
+
 }
 label {
     display: block;
@@ -26,8 +27,8 @@ input {
     display: inline-block;
     clear: center;
     text-align: center;
-    width: 20%;
-    margin-left: 40%;
+    width: 50%;
+    margin-left: 25%;
     margin-bottom: auto;
     padding: 10px;
     box-sizing: border-box;
@@ -43,7 +44,7 @@ button {
     color: white;
     cursor: pointer;
     background-color: #4caf50;
-    width: 10%;
+    width: 20%;
     font-size: 16px;
 }
 .wrap {
@@ -55,3 +56,32 @@ button {
     font: var(--text);
     font-weight: bold;
 }
+.login-logo{
+    height: 9rem;
+    width: auto;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding-top: 10vh;
+    margin-top: -40px;
+}
+.formlogin{
+    position: absolute;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    justify-content: center;
+    left: 28rem;
+    top: 7rem;
+    width: 370px;
+    height: 400px;
+    box-shadow: 0px 0px 30px #00000071;
+}
+.background-swirl{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);    
+    display: flex;
+}
+.background-swirl img{
+    ;
+}
+

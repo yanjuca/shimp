@@ -11,30 +11,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Estilo específico para a página de Login -->
-  <link rel="stylesheet" href="/styles/login.css">
+  <link rel="stylesheet" href="../../styles/login.css">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <div class="surface-color">
-    <nav class="container">
-      <a class="main-logo-wrapper" href="index.html" id="logo">
-        <img class="main-logo" src="/assets/logos/logo-black-name.png" alt="logomarca">
-      </a>
-
-      <ul id="primary-menu">
-        <li><a href="catalogo.html">Lupa</a></li>
-        <li><a href="#">Carrinho</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
-  </div>
-
   <!-- Login Formulário -->
  <!-- Login Formulário -->
-<div class="main">
+ <div class="background-swirl">
+  <img src="../../assets/images/carousel/slide1.webp" alt="">
+</div>
+
+
+<div class="formlogin">
   <form id="loginForm">
+    <a class="login-logo" href="index.html" id="logo">
+      <img class="main-logo" src="../../assets/logos/logo-black-name.png" alt="logomarca">
+    </a>
     <label for="first" class="inputname">Username:</label>
     <input 
       type="text" 
@@ -57,12 +49,15 @@
       <button type="submit">Entrar</button>
     </div>
   </form>
+  
 
   <p class="inputname" style="text-align: center;">
     Não tem cadastro? 
     <a href="cadastro.html" style="text-decoration: none;">Crie uma conta</a>
   </p>
+  
 </div>
+
 
 <script>
   document.getElementById('loginForm').addEventListener('submit', function (e) {
