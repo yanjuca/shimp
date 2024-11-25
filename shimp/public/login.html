@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,57 +10,58 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
+  
   <!-- Estilo específico para a página de Login -->
   <link rel="stylesheet" href="../../styles/login.css">
 </head>
 
 <body>
-  <!-- Login Formulário -->
- <!-- Login Formulário -->
- <div class="background-swirl">
-  <img src="../../assets/images/carousel/slide1.webp" alt="">
-</div>
-
-
-<div class="formlogin">
-  <form id="loginForm">
-    <a class="login-logo" href="index.html" id="logo">
-      <img class="main-logo" src="../../assets/logos/logo-black-name.png" alt="logomarca">
-    </a>
-    <label for="first" class="inputname">Username:</label>
-    <input 
+  
+  <div class="background-swirl"/>
+  
+  <div class="formlogin">
+    <form id="loginForm">
+      <a class="login-logo" href="../../index.html" id="logo">
+        <img class="main-logo" src="../../assets/logos/logo-black-name.png" alt="logomarca">
+      </a>
+      <label for="first" class="inputname">Username:</label>
+      <input 
       type="text" 
       id="first" 
       name="first" 
       placeholder="Digite seu usuário" 
       required 
-    />
-
-    <label for="password" class="inputname">Senha:</label>
-    <input 
+      />
+      
+      <label for="password" class="inputname">Senha:</label>
+      <input 
       type="password" 
       id="password" 
       name="password" 
       placeholder="Digite sua senha" 
       required 
-    />
+      />
 
-    <div class="wrap">
-      <button type="submit">Entrar</button>
-    </div>
-  </form>
+      
+      
+      <div class="wrap">
+        <button type="submit">Entrar</button>
+      </div>
+    </form>
+
+    
+    
+    
+    <p class="inputname" style="text-align: center;">
+      Não tem cadastro? 
+      <a class="hover-cadastro" href="cadastro.html" style="text-decoration: none;">Crie uma conta</a>
+    </p>
+    
+  </div>
   
-
-  <p class="inputname" style="text-align: center;">
-    Não tem cadastro? 
-    <a href="cadastro.html" style="text-decoration: none;">Crie uma conta</a>
-  </p>
   
-</div>
-
-
-<script>
+  
+  <script>
   document.getElementById('loginForm').addEventListener('submit', function (e) {
     e.preventDefault(); // Evita o envio padrão do formulário
     alert('Login realizado com sucesso! Redirecionando para o catálogo...');

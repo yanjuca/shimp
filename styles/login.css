@@ -2,18 +2,7 @@
 @import url(nav.css);
 
 
-main {
-    display: flex;
-    align-content: center;
-    background-color: #FFF;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px;
-    transition: transform 0.2s;
-    width: 500px;
-    text-align: center;
 
-}
 label {
     display: block;
     width: 100%;
@@ -57,31 +46,52 @@ button {
     font-weight: bold;
 }
 .login-logo{
-    height: 9rem;
+    height: 90px;
     width: auto;
     justify-content: center;
     display: flex;
-    margin: auto;
-    padding-top: 10vh;
-    margin-top: -40px;
+    padding-top: 40px;
 }
 .formlogin{
-    position: absolute;
     background-color: #f3f3f3;
     border-radius: 20px;
     justify-content: center;
-    left: 28rem;
-    top: 7rem;
     width: 370px;
     height: 400px;
     box-shadow: 0px 0px 30px #00000071;
 }
-.background-swirl{
-    filter: blur(8px);
-    -webkit-filter: blur(8px);    
+
+body{
     display: flex;
-}
-.background-swirl img{
-    ;
+    height: 100vh;
+    width: auto;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    display: block;
+    background-image: url(../assets/images/carousel/slide1.webp);
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+  
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  .hover-cadastro:hover{
+    font-size: 1.2rem;
+    font-size-adjust: 20px;
+  }
