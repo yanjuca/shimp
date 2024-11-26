@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-color: #5c7c4d;
+    --background-color: #FFFFFF;
+    --surface-color: #f3f3f2;
+    --skeleton-color: #D9D9D9;
+    --shape-transparency: #ffffff90;
+    --text-color-primary: #313131;
+    --text-color-secondary: #6C6C6C;
+    --font-family: "Poppins", sans-serif !important;
+    --text-lg: bold 32px/125% var(--font-family);
+    --text: 16px/150% var(--font-family);
+    --text-md: 14px/170% var(--font-family);
+    --text-sm: 12px 170% var(--font-family);
+}
+
+body {
+    font: var(--text-lg);
+    color: var(--text-color-secondary);
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    text-shadow: 1px 1px 1px #31313181;
+    font-size: 1rem;
+    transition: all 500ms;
+}
+
+a:hover {
+/*     transition: all 500ms;*/
+    font-size: 2rem;
+    font-size-adjust: 20px;
+}
+
+.container {
+    padding-inline: 20px;
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.surface-color{
+/*     background-color: var(--brand-color); */
+    box-shadow: 0px 0px 20px #313131;
+    background-image: url(../assets/images/carousel/slide1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
