@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-
-  <!-- Conexões com fontes externas -->
+  
+  <link rel="stylesheet" href="../../styles/login.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  
-  <!-- Estilo específico para a página de Login -->
-  <link rel="stylesheet" href="../../styles/login.css">
 </head>
 
-<body>
-  
-  <div class="background-swirl"/>
-  
-  <div class="formlogin">
-    <form id="loginForm">
-      <a class="login-logo" href="../../index.html" id="logo">
-        <img class="main-logo" src="../../assets/logos/logo-black-name.png" alt="logomarca">
-      </a>
-      <label for="first" class="inputname">Username:</label>
-      <input 
-      type="text" 
-      id="first" 
-      name="first" 
-      placeholder="Digite seu usuário" 
-      required 
-      />
-      
-      <label for="password" class="inputname">Senha:</label>
-      <input 
-      type="password" 
-      id="password" 
-      name="password" 
-      placeholder="Digite sua senha" 
-      required 
-      />
+<body> <!-- Apenas uma tag <body> -->
+  <div class="background-swirl">
+    <div class="formlogin">
+      <form id="loginForm">
+        <a class="login-logo" href="../../index.html" id="logo">
+          <img class="main-logo" src="../../assets/logos/logo-black-name.png" alt="logomarca">
+        </a>
 
-      
-      
-      <div class="wrap">
-        <button type="submit">Entrar</button>
-      </div>
-    </form>
+        <label for="email" class="inputname">E-mail:</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Digite seu e-mail" 
+          required 
+        />
+        
+        <label for="password" class="inputname">Senha:</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          placeholder="Digite sua senha" 
+          required 
+        />
+        
+        <div class="wrap">
+          <button type="submit">Entrar</button>
+        </div>
+      </form>
 
-    
-    
-    
-    <p class="inputname" style="text-align: center;">
-      Não tem cadastro? 
-      <a class="hover-cadastro" href="cadastro.html" style="text-decoration: none;">Crie uma conta</a>
-    </p>
-    
+      <p class="inputname" style="text-align: center;">
+        Não tem cadastro? 
+        <a class="hover-cadastro" href="cadastro.html" style="text-decoration: none;">Crie uma conta</a>
+      </p>
+    </div>
   </div>
-  
-  
-  
+
   <script>
-  document.getElementById('loginForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Evita o envio padrão do formulário
-    alert('Login realizado com sucesso! Redirecionando para o catálogo...');
-    window.location.href = 'catalogo.html'; // Redireciona para o catálogo
-  });
-</script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Evita o envio padrão do formulário
+
+      // Coleta os dados do formulário
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Recupera os dados do usuário no localStorage
+      const userData = JSON.parse(localStorage.getItem('user'));
+
+      // Verifica as credenciais
+      if (userData && userData.email === email && userData.password === password) {
+        alert('Login realizado com sucesso!');
+        window.location.href = 'catalogo.html'; // Redireciona para o catálogo
+      } else {
+        alert('E-mail ou senha incorretos. Verifique suas credenciais ou cadastre-se.');
+      }
+    });
+  </script>
+</body>
+</html>
