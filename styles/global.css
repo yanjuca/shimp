@@ -6,7 +6,7 @@
 
 :root {
     --brand-color: #5c7c4d;
-    --background-color: #FFFFFF;
+    --background-color: #bebebe;
     --surface-color: #f3f3f2;
     --skeleton-color: #D9D9D9;
     --shape-transparency: #ffffff90;
@@ -28,7 +28,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    text-shadow: 1px 1px 1px #31313181;
+    text-shadow: 0px 0px 2px #21212155;
     font-size: 1rem;
     transition: all 500ms;
 }
