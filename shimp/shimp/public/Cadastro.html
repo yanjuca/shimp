@@ -12,16 +12,13 @@
 </head>
 
 <body>
-  <body>
-  
-    <div class="background-swirl"/>
-    
+  <div class="background-swirl">
     <div class="formlogin">
-      <form id="loginForm">
+      <form id="cadastroForm">
         <a class="login-logo" href="../../index.html" id="logo">
           <img class="main-logo" src="../../assets/logos/logo-black-name.png" alt="logomarca">
         </a>
-  
+
         <label class="inputname" for="name">Nome:</label>
         <input 
           type="text" 
@@ -39,7 +36,7 @@
           placeholder="Digite seu e-mail" 
           required 
         />
-  
+
         <label class="inputname" for="password">Senha:</label>
         <input 
           type="password" 
@@ -48,7 +45,7 @@
           placeholder="Digite sua senha" 
           required 
         />
-  
+
         <label class="inputname" for="cpf">CPF:</label>
         <input 
           type="text" 
@@ -58,7 +55,7 @@
           maxlength="11" 
           required 
         />
-  
+
         <label class="inputname" for="address">Endereço:</label>
         <input 
           type="text" 
@@ -67,7 +64,7 @@
           placeholder="Digite seu endereço" 
           required 
         />
-  
+
         <label class="inputname" for="phone">Número de Telefone:</label>
         <input 
           type="tel" 
@@ -78,26 +75,32 @@
           title="Digite um número com 10 ou 11 dígitos" 
           required 
         />
-  
-        
         
         <div class="wrap">
           <button type="submit">Cadastrar</button>
         </div>
       </form>
-  
-      
-      
-      
-      
     </div>
-    
-  </body>  
+  </div>
 
-<script>
-  document.getElementById('cadastroForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Evita o envio padrão do formulário
-    alert('Cadastro realizado com sucesso! Redirecionando para o catálogo...');
-    window.location.href = 'catalogo.html'; // Redireciona para o catálogo
-  });
-</script>
+  <script>
+    document.getElementById('cadastroForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Evita o envio padrão do formulário
+      
+      // Coleta os dados do formulário
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const cpf = document.getElementById('cpf').value;
+      const phone = document.getElementById('phone').value;
+
+      // Armazena os dados no localStorage
+      const userData = { name, email, password, cpf, phone };
+      localStorage.setItem('user', JSON.stringify(userData));
+
+      alert('Cadastro realizado com sucesso!');
+      window.location.href = 'login.html'; // Redireciona para a página de login
+    });
+  </script>
+</body>
+</html>
