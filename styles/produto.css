@@ -1,0 +1,139 @@
+@import url(index.css);
+@import url(global.css);
+
+
+
+
+
+  
+  /* container sem navbar */
+  .product {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .product-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+  
+
+  .product-header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .product-info {
+    max-width: 600px;
+  }
+  
+  
+  .product-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  
+  .price {
+    margin: 20px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .price .previous-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .price .current-price {
+    color: #28a745;
+  }
+  
+  .installments {
+  margin-top: -20px;
+  font-size: 1rem;
+  color: #555;
+ }
+
+ .installment-price {
+  font-weight: bold;
+ }
+
+  .colors, .sizes {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .colors h3, .sizes h3 {
+    margin-bottom: 5px;
+  }
+  
+  .colors div, .sizes div {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    font-size: 1rem;
+  }
+  
+  .colors div:hover, .sizes div:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #0056b3;
+  }
+  
+  
+  .buy-button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .product-header {
+      flex-direction: column;
+    }
+    .product-info {
+      text-align: center;
+    }
+    .price {
+      font-size: 1.6rem;
+    }
+    .buy-button {
+      width: 100%;
+      padding: 15px;
+    }
+  }
