@@ -1,24 +1,48 @@
-import React, { useState } from 'react';
+import React, { useEffect,useState,useRef } from 'react';
+import axios from 'axios';
+import api from '../services/api';
+import '../styles/cadastro.css';
+
+
 
 function Cadastro() {
+  const[users,setUsers]= useState([])
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     password: '',
     cpf: '',
-    birthDate: '',
+    phone: '',
   });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Registrando usuário:', formData);
-    // Enviar os dados para a API/backend
+  
+    try {
+      console.log('Enviando dados:', formData); // Verifique se os dados aparecem no console
+  
+      const response = await api.post('/usuarios', formData);
+      alert('Usuário cadastrado com sucesso!');
+      console.log('Resposta da API:', response.data);
+  
+      // Limpar o formulário após o envio
+      setFormData({
+        name: '',
+        email: '',
+        password: '',
+        cpf: '',
+        phone: '',
+      });
+  
+      // Redirecionar para a página de login após cadastro
+      window.location.href = '/login';  // Aqui você pode usar a navegação correta com React Router
+  
+    } catch (error) {
+      console.error('Erro ao cadastrar usuário:', error);
+      alert(error.response?.data?.error || 'Erro ao cadastrar usuário. Tente novamente.');
+    }
   };
-
+  
   return (
     <div>
       <h1>Cadastro</h1>
@@ -56,11 +80,11 @@ function Cadastro() {
           maxLength="11"
           required
         />
-        <label>Data de Nascimento:</label>
+        <label>Telefone:</label>
         <input
-          type="date"
-          name="birthDate"
-          value={formData.birthDate}
+          type="text"
+          name="phone"
+          value={formData.phone}
           onChange={handleChange}
           required
         />
