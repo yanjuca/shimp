@@ -47,6 +47,7 @@
     font-size: 2rem;
     margin-bottom: 10px;
     color: #000;
+    font: var(--font-family);
   }
   
   
@@ -54,6 +55,7 @@
     margin: 20px 0;
     font-size: 1.8rem;
     font-weight: bold;
+    font: var(--font-family);
   }
   
   .price .previous-price {
@@ -61,6 +63,7 @@
     color: #888;
     font-size: 1.5rem;
     margin-right: 10px;
+    font: var(--font-family);
   }
   
   .price .current-price {
@@ -71,6 +74,7 @@
   margin-top: -20px;
   font-size: 1rem;
   color: #555;
+  
  }
 
  .installment-price {
@@ -80,6 +84,7 @@
   .colors, .sizes {
     margin-top: 10px;
     text-align: center;
+    font: var(--text);
   }
   
   .colors h3, .sizes h3 {
