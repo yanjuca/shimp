@@ -1,5 +1,6 @@
 @import url(global.css);
 @import url(nav.css);
+@import url(catalogo.css);
 
 .anuncio {
     height: auto;
